@@ -378,5 +378,3 @@ FROM 		temp bs
 JOIN 		min_dist md
 ON 			bs.sign_id = md.sign_id AND bs.dist = md.min_dist 
 WHERE		bs.dist <= 30 ; # Limit to signs within 30 feet of the centerline.
-
-TRUNCATE TABLE nyc_parking.block_sign ;
